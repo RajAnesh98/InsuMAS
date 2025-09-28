@@ -9,7 +9,7 @@ from Agents.utils import checkpointer, in_memory_store
 FAQ_tools = [FAQ_insurance_tool]
 # Define prompt for FAQ agent
 FAQ_subagent = create_react_agent(
-    model = llm,                         
+    llm,                         
     tools = FAQ_tools,            
     name = "FAQ_subagent", 
     prompt = FAQ_subagent_prompt, 

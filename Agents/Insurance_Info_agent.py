@@ -10,9 +10,9 @@ insurance_info_tools = [get_insurance_info_tool]
 
 # Create insurance info agent
 insurance_information_subagent = create_react_agent(
-    model = llm,                         
+    llm,                         
     tools = insurance_info_tools,            
-    name = "insurance_information_subagent", 
+    name = "insurance_info_agent",  # Changed name to avoid conflict with tool call
     prompt = insurance_info_subagent_prompt, 
     state_schema = State,             
     checkpointer = checkpointer,      

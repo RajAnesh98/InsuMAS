@@ -8,7 +8,7 @@ from Agents.utils import checkpointer, in_memory_store
 
 insurance_recommendation_tools = [query_insurance_recommendation_tool]
 insurance_recommendation_subagent = create_react_agent(
-    model = llm,                         
+    llm,                         
     tools = insurance_recommendation_tools,            
     name = "insurance_recommendation_subagent", 
     prompt = insurance_recommendation_subagent_prompt, 
