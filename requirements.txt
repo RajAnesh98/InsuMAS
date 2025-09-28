@@ -1,0 +1,13 @@
+langgraph
+langsmith
+langchain-community
+langchain-core
+langchain-groq
+langchain-experimental
+python-dotenv
+langchain-chroma
+scikit-learn
+openevals
+langgraph-supervisor
+langgraph-cli[inmem]
+langchain-anthropic
