@@ -20,6 +20,7 @@ import base64
 import io
 import re
 from difflib import get_close_matches
+from langgraph_supervisor import create_supervisor
 
 # Short-term and long-term memory
 from langgraph.checkpoint.memory import MemorySaver

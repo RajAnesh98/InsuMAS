@@ -22,7 +22,7 @@ from Agents.utils import (
 
 
 # Configure the library with your API key
-genai.configure(api_key="AIzaSyB3JsYuzVmJee4rmktxiGmYmv-AMvnguTI")
+genai.configure(api_key="")
 
 
 # Use the EXACT SAME path as the first file

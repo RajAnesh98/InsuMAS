@@ -10,7 +10,7 @@ insurance_info_tools = [get_insurance_info_tool]
 
 # Create insurance info agent
 insurance_information_subagent = create_react_agent(
-    llm = llm,                         
+    model = llm,                         
     tools = insurance_info_tools,            
     name = "insurance_information_subagent", 
     prompt = insurance_info_subagent_prompt, 
