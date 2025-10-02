@@ -45,10 +45,10 @@ venv.bak/
 .env.*.local
 
 # Database
-*.db
-*.sqlite3
-chroma_db/
-chroma_db_doctors/
+#*.db
+#*.sqlite3
+#chroma_db/
+#chroma_db_doctors/
 
 # Logs
 *.log
