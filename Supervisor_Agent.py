@@ -1,29 +1,3 @@
-# Initialize the LLM 
-# from dotenv import load_dotenv
-# from langchain_groq import ChatGroq
-# import os
-# from langsmith import utils
-
-# # Short-term and long-term memory
-# from langgraph.checkpoint.memory import MemorySaver
-# from langgraph.store.memory import InMemoryStore 
-
-# # Define state
-# from typing import Annotated, List
-# from typing_extensions import TypedDict
-# from langgraph.graph.message import AnyMessage, add_messages
-# from langgraph.managed.is_last_step import RemainingSteps
-# import uuid
-# from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
-
-# # Create emotional agent
-# from langgraph.prebuilt import create_react_agent 
-
-# # Define tools for insurance info agent
-# from langchain_core.tools import tool
-# #Create supervisor 
-# from langgraph_supervisor import create_supervisor
-
 from Agents.State import State
 from Agents.LLM import llm
 from Agents.Optimism_agent import optimism_subagent
