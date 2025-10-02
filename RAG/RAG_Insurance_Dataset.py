@@ -1,34 +1,8 @@
 import chromadb
 import pandas as pd
-#chroma_client = chromadb.Client()
-
-#collection = chroma_client.create_collection(name="Database")
-# df = pd.read_excel(r'C:\Users\Raja\Desktop\SHOP_Market_Medical.xlsx')
-# df['combined'] = df.apply(lambda row: ' '.join(row.astype(str)), axis=1)
-# list_of_dicts = df.to_dict(orient='records')
-
-
-# ids = []
-# metadatas = []
-# documents = []
-
-# for idx, dta in enumerate(list_of_dicts):
-#     documents.append(dta['combined'])
-#     ids.append(str(idx))
-#     metadatas.append({'Metadata': str(dta)})
-
-
-# collection.add(
-#     ids = ids,
-#     documents = documents,
-#     metadatas = metadatas
-# )
-
-
-import chromadb
 
 # Define the path where the database will be stored
-DB_PATH = "C:/Users/Raja/Desktop/hackathon-demo/chroma_db"
+DB_PATH = "RAG/chroma_db"
 
 # Initialize the persistent client with the specified path
 client = chromadb.PersistentClient(path=DB_PATH)
@@ -36,7 +10,8 @@ client = chromadb.PersistentClient(path=DB_PATH)
 # Create a new collection (or get it if it already exists)
 collection = client.get_or_create_collection(name="Database")
 
-df = pd.read_excel(r'C:\Users\Raja\Desktop\SHOP_Market_Medical.xlsx')
+
+df = pd.read_excel(r'RAG\SHOP_Market_Medical.xlsx')
 df['combined'] = df.apply(lambda row: ' '.join(row.astype(str)), axis=1)
 list_of_dicts = df.to_dict(orient='records')
 
