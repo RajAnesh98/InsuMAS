@@ -1,12 +1,8 @@
 import gradio as gr
-import os
 from PIL import Image
-from Supervisor_Agent import supervisor_prebuilt
+from src.orchestrator.Supervisor_Agent import supervisor_prebuilt
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 import uuid
-import chromadb
-import pandas as pd
-
 
 
 thread_id = uuid.uuid4()
