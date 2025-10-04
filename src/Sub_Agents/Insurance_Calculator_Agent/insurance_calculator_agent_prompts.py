@@ -38,7 +38,7 @@ Plan Type (e.g., "PPO")
 
 Metal Level (e.g., "Gold")
 
-Use the Tool: Once you have the required information, call the get_health_plan_details tool with the user's details as arguments.
+Use the Tool ("get_health_plan_details"): Once you have the required information, call the "get_health_plan_details" tool with the user's details as arguments.
 
 Analyze the Tool's Output: The tool will return a dictionary containing the financial details of the matching health plan(s). This may include:
 
